@@ -5,8 +5,21 @@ spring:
         username: itinnova
         password: Useradmin123
     jpa:
-        show_sql: true
         hibernate:
             ddl-auto: update
-            dialect: org.hibernate.dialect.SQLServer2012Dialect
-   
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+                dialect: org.hibernate.dialect.SQLServer2012Dialect
+    mail:
+        host: smtp.gmail.com
+        username: leyva.calle1403@gmail.com
+        password: zxfjbrchgptmsblb
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
